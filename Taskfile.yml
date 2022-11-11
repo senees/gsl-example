@@ -1,0 +1,25 @@
+version: '3'
+
+silent: true
+
+tasks:
+
+  build:
+    desc: Builds debug target
+    cmds:
+      - cmd: ./scripts/debug.sh
+
+  clean:
+    desc: Cleans all targets
+    cmds:
+      - cmd: ./scripts/clean.sh
+
+  rebuild:
+    desc: Recreates build system
+    cmds:
+      - cmd: ./scripts/rebuild.sh
+
+  release:
+    desc: Builds release target
+    cmds:
+      - cmd: ./scripts/release.sh
